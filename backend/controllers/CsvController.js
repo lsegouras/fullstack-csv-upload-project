@@ -3,14 +3,12 @@ import fs from "fs";
 import csvParser from "csv-parser";
 import path from "path";
 
-/** ------------------ EXPORTING FUNCTION To upload a file ------------------ **/
+/** ----------------- EXPORTING FUNCTION To upload a file ------------------ **/
 const upload = async function (req, res) {
   try {
-    // file is not present
     if (!req.file) {
       return res.status(400).send("No files were uploaded.");
     }
-    // file is not csv
     if (req.file.mimetype != "text/csv") {
       return res.status(400).send("Select CSV files only.");
     }
@@ -27,14 +25,14 @@ const upload = async function (req, res) {
   }
 };
 
-/** ------------------ EXPORTING FUNCTION To open file viewer page ------------------ **/
+/** ------------ EXPORTING FUNCTION To open file viewer page --------------- **/
 const view = async function (req, res) {
   try {
     console.log(req.params);
     let csvFile = await csvSchema.findById(req.params.id);
     console.log(csvFile);
     const results = [];
-    fs.createReadStream(csvFile.filePath) //setting up the path for file upload
+    fs.createReadStream(csvFile.filePath)
       .pipe(csvParser({ separator: ";" }))
 
       .on("data", (data) =>
@@ -54,7 +52,7 @@ const view = async function (req, res) {
   }
 };
 
-/** ------------------ EXPORTING FUNCTION To delete the file ------------------ **/
+/** ---------------- EXPORTING FUNCTION To delete the file ----------------- **/
 
 const deleteFile = async (req, res) => {
   try {

@@ -1,7 +1,7 @@
 /** ------------------ IMPORTING PACKAGE/MODELS ------------------ **/
 import File from "../models/CsvModel.js";
 
-/** ------------------ EXPORTING FUNCTION To open home page ------------------ **/
+/** ---------------- EXPORTING FUNCTION To open home page ------------------ **/
 const home = async function (req, res) {
   try {
     let file = await File.find({});

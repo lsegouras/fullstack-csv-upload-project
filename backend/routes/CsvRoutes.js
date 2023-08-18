@@ -4,7 +4,7 @@ const router = express.Router();
 import multer from "multer";
 
 /** ------------------ IMPORTING CONTROLLERS ------------------ **/
-import home from "../controllers/home_controller.js";
+import home from "../controllers/home_controller.js"; // Importe apenas a função de callback 'home'
 import CsvController from "../controllers/CsvController.js";
 const uploadMiddleware = multer({ dest: "uploads/files" });
 
