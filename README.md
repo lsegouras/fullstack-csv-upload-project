@@ -2,7 +2,7 @@
 
 Web application that allows users to load a CSV file and display it as cards in frontend. The application also includes a search bar to find data within the loaded CSV file.
 
-[<img src="./src/assets/app-demo.gif" alt="app gif">]
+[<img src="./frontend/src/assets/app-demo.gif">]
 
 ## INSTALLATION
 
