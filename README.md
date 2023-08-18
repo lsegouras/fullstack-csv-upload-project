@@ -16,6 +16,8 @@ Start the application at frontend: npm run dev
 
 Start the server at backend: npm run dev
 
+You will need to create a file .env with MongoDB's url to connect to database.
+
 Open the aplication in your browser: http://localhost:4000
 
 ## FEATURES
