@@ -5,7 +5,7 @@ import {
   faArrowUpRightFromSquare,
   faTrashAlt,
 } from "@fortawesome/free-solid-svg-icons";
-// import("../styles/home.css");
+import("../styles/home.css");
 
 const Home = () => {
   const [files, setFiles] = useState([]);

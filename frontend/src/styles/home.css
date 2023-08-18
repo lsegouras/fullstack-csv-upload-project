@@ -1,0 +1,162 @@
+.nav-bar {
+  display: flex;
+  width: 100%;
+  height: 3.75rem;
+  background-color: #fff;
+  box-shadow: 0px 5px 5px 0px #ddd;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-family: "Monospace", Rockwell;
+  font-weight: 700;
+  color: var(--primary-color);
+  padding: 0.625rem;
+}
+
+.sub-title {
+  font-size: 1.125rem;
+  font-family: "Monospace", Rockwell;
+  padding: 0.625rem;
+  padding-top: 0.625rem;
+  color: var(--text-color);
+}
+
+.title-description {
+  padding-left: 0.625rem;
+  font-size: 0.9375rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 70%;
+  height: 7.5rem;
+  margin-top: 1.875rem;
+  padding: 0 0.625rem;
+  gap: 2.5rem;
+}
+
+.input-container .choose-file-btn {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  width: 8.125rem;
+  height: 2.5rem;
+  border: none;
+  background-color: var(--secondary-color);
+  font-size: 1rem;
+  border-radius: 0.4375rem;
+  display: flex;
+  align-items: center;
+}
+
+.input-container .choose-file-btn:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0px 2px 2px 1px var(--secondary-color);
+  cursor: pointer;
+}
+
+.input-container .choose-file-btn input {
+  display: block !important;
+  width: 8.125rem !important;
+  height: 2.5rem !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  cursor: pointer;
+}
+
+.choose-file-btn user agent stylesheetdiv input[type="button"],
+.upload input[type="submit"],
+.upload input[type="reset"],
+.upload input[type="file"]::-webkit-file-upload-button,
+.upload button {
+  cursor: text !important;
+  /* Correction for the gost button - force cursor text */
+}
+
+.inputFileOverlay {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+}
+
+.upload-btn {
+  width: 8.125rem;
+  height: 2.5rem;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0.4375rem;
+  font-weight: 500;
+}
+
+.list-center-text {
+  color: #f8f8f8;
+  text-align: center;
+  background-color: var(--primary-color);
+  margin-top: 3.125rem;
+}
+.list-center-text h2 {
+  padding: 0.3125rem;
+  font-size: 1.5625rem;
+}
+
+.no-file {
+  font-size: 1.375rem;
+  color: var(--secondary-color);
+  text-align: center;
+}
+.file-details {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: var(--text-color);
+  margin: auto;
+}
+th,
+td {
+  text-align: center;
+  padding: 0.75rem;
+}
+th {
+  background-color: #eee;
+  font-weight: bold;
+}
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+.view-link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.delete-link {
+  font-size: 1.125rem;
+  color: rgb(165, 35, 35);
+}
+
+.upload-btn:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0px 2px 2px 1px var(--primary-color);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  table {
+    font-size: 0.8125rem;
+  }
+}
